@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        border: 1px solid red;
+      }
+
+      .item:nth-child(5n) {
+        border: 1px solid blue;
+        margin-bottom: 100vh; /* to create the break */
+      }
+
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="item">Text 1</div>
+      <div class="item">Text 2</div>
+      <div class="item">Long Text 3 must wrap to next line</div>
+      <div class="item">Text 4</div>
+      <div class="item">Text 5</div>
+      <div class="item">Text 6</div>
+      <div class="item">Text 7 is also long</div>
+      <div class="item">Text 8</div>
+      <div class="item">Text 9</div>
+      <div class="item">Text 10</div>
+      <div class="item">Text 11</div>
+      <div class="item">Text 12 is last item</div>
+    </div>
+  </body>
+</html>

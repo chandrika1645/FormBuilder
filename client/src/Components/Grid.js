@@ -200,37 +200,130 @@ class Grid extends Component {
     }
   }
 
-  generateHTML = () => {
-    const parent = document.querySelector(".layout");
+  generateHTML = (layout) => {
+    const dynamicComponents = document.querySelectorAll(".dynamic-component");
+    console.log("inside the function");
 
-    this.dfs(parent);
+    let componentsWithSeq = [];
 
-    const updatedHTML = parent.innerHTML;
-    const fullHTML = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            /* You can include any styles here */
-        </style>
-    </head>
-    <body>
-        ${updatedHTML}
-    </body>
-    </html>
-`;
-    const formData = new URLSearchParams();
-    formData.append("html", fullHTML);
+    // Iterate over each dynamic component
+    dynamicComponents.forEach((component) => {
+      const key = component.id.replace("dynamic-component-", "");
+      const layoutInfo = layout.find((item) => item.i === key);
 
+      const rect = component.getBoundingClientRect();
+      let type;
+      let name;
+
+      const layoutleft = document
+        .querySelector(".layout")
+        .getBoundingClientRect().left;
+      const card = component.querySelector(".Card-component");
+      const table = component.querySelector(".table");
+      // console.log(table)
+      if (card) {
+        type = "card";
+        name = card.attributes[2].value;
+        console.log("logging name", name);
+      } else if (table) {
+        type = "table";
+        name = table.attributes[2].value;
+        console.log("logging name", name);
+      }
+
+      componentsWithSeq.push({
+        componentType: type,
+        componentName: name,
+        height: rect.height - 20,
+        left: rect.left - layoutleft,
+        yTop: rect.top - 80,
+        yBottom: rect.bottom - 80,
+        width: rect.width - 20,
+        right: rect.right - layoutleft,
+        gridW: layoutInfo ? layoutInfo.w : 0,
+        gridH: layoutInfo ? layoutInfo.h : 0,
+      });
+    });
+
+    // componentsWithSeq.sort((a, b) => a.yTop - b.yTop);
+
+    class Node {
+      constructor(data) {
+        this.data = data;
+        this.next = null;
+      }
+    }
+
+    // Sort the components array by yTop
+    componentsWithSeq.sort((a, b) => a.yTop - b.yTop);
+
+    for (let component of componentsWithSeq) {
+      console.log(component.yTop, component.componentName);
+    }
+
+    // Create a function to group components by yTop and maintain greatest height
+    function groupComponentsByYTopWithMaxHeight(components) {
+      let groups = [];
+      let currentGroup = null;
+      let maxHeight = -Infinity; // Initialize maxHeight to negative infinity
+
+      for (let component of components) {
+        if (
+          !currentGroup ||
+          (currentGroup.data[0].yTop !== component.yTop &&
+            component.yTop > maxHeight)
+        ) {
+          // Create a new group if currentGroup is null,
+          // or the yTop values differ,
+          // or the current component's yTop is less than the greatest height
+          currentGroup = new Node([component]);
+          groups.push(currentGroup);
+          maxHeight = component.yBottom; // Update maxHeight
+        } else {
+          // Add the component to the current group
+          currentGroup.data.push(component);
+          maxHeight = Math.max(maxHeight, component.yBottom); // Update maxHeight
+        }
+      }
+
+      for (let group of groups) {
+        group.data.sort((a, b) => a.left - b.left);
+      }
+
+      for (let group of groups) {
+        group.data.sort((a, b) => a.yTop - b.yTop);
+        let totalWidth = 0;
+        for (let i = 0; i < group.data.length; i++) {
+          let component = group.data[i];
+          // component.left -= totalWidth; // Update left
+
+          // For components with same yTop, update left and yTop
+          if (i > 0 && component.yTop === group.data[i - 1].yTop) {
+            component.left -= group.data[i - 1].right;
+            component.yTop = group.yTop;
+          }
+
+          // Update totalWidth
+          totalWidth += component.width;
+        }
+      }
+
+      return groups;
+    }
+
+    // Group components by yTop and maintain greatest height
+    let groupedComponents =
+      groupComponentsByYTopWithMaxHeight(componentsWithSeq);
+
+    console.log("components array before sending", groupedComponents);
+
+    // Send POST request to the server
     fetch("http://localhost:2050/saveTemplate", {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
       },
-      body: formData.toString(),
+      body: JSON.stringify({ groupedComponents }),
     })
       .then((response) => {
         if (response.ok) {
@@ -245,145 +338,6 @@ class Grid extends Component {
         console.error("Error occurred while uploading file:", error);
       });
   };
-
-  // generateHTML = (layout) => {
-  //   const dynamicComponents = document.querySelectorAll(".dynamic-component");
-  //   console.log("inside the function");
-
-  //   let componentsWithSeq = [];
-
-  //   // Iterate over each dynamic component
-  //   dynamicComponents.forEach((component) => {
-  //     const key = component.id.replace("dynamic-component-", "");
-  //     const layoutInfo = layout.find((item) => item.i === key);
-
-  //     const rect = component.getBoundingClientRect();
-  //     let type;
-  //     let name;
-
-  //     const layoutleft = document
-  //       .querySelector(".layout")
-  //       .getBoundingClientRect().left;
-  //     const card = component.querySelector(".Card-component");
-  //     const table = component.querySelector(".table");
-  //     // console.log(table)
-  //     if (card) {
-  //       type = "card";
-  //       name = card.attributes[2].value;
-  //       console.log("logging name", name);
-  //     } else if (table) {
-  //       type = "table";
-  //       name = table.attributes[2].value;
-  //       console.log("logging name", name);
-  //     }
-
-  //     componentsWithSeq.push({
-  //       componentType: type,
-  //       componentName: name,
-  //       height: rect.height - 20,
-  //       left: rect.left - layoutleft,
-  //       yTop: rect.top - 80,
-  //       yBottom: rect.bottom - 80,
-  //       width: rect.width - 20,
-  //       right: rect.right - layoutleft,
-  //       gridW: layoutInfo ? layoutInfo.w : 0,
-  //       gridH: layoutInfo ? layoutInfo.h : 0,
-  //     });
-  //   });
-
-  //   // componentsWithSeq.sort((a, b) => a.yTop - b.yTop);
-
-  //   class Node {
-  //     constructor(data) {
-  //       this.data = data;
-  //       this.next = null;
-  //     }
-  //   }
-
-  //   // Sort the components array by yTop
-  //   componentsWithSeq.sort((a, b) => a.yTop - b.yTop);
-
-  //   for (let component of componentsWithSeq) {
-  //     console.log(component.yTop, component.componentName);
-  //   }
-
-  //   // Create a function to group components by yTop and maintain greatest height
-  //   function groupComponentsByYTopWithMaxHeight(components) {
-  //     let groups = [];
-  //     let currentGroup = null;
-  //     let maxHeight = -Infinity; // Initialize maxHeight to negative infinity
-
-  //     for (let component of components) {
-  //       if (
-  //         !currentGroup ||
-  //         (currentGroup.data[0].yTop !== component.yTop &&
-  //           component.yTop > maxHeight)
-  //       ) {
-  //         // Create a new group if currentGroup is null,
-  //         // or the yTop values differ,
-  //         // or the current component's yTop is less than the greatest height
-  //         currentGroup = new Node([component]);
-  //         groups.push(currentGroup);
-  //         maxHeight = component.yBottom; // Update maxHeight
-  //       } else {
-  //         // Add the component to the current group
-  //         currentGroup.data.push(component);
-  //         maxHeight = Math.max(maxHeight, component.yBottom); // Update maxHeight
-  //       }
-  //     }
-
-  //     for (let group of groups) {
-  //       group.data.sort((a, b) => a.left - b.left);
-  //     }
-
-  //     for (let group of groups) {
-  //       group.data.sort((a, b) => a.yTop - b.yTop);
-  //       let totalWidth = 0;
-  //       for (let i = 0; i < group.data.length; i++) {
-  //         let component = group.data[i];
-  //         // component.left -= totalWidth; // Update left
-
-  //         // For components with same yTop, update left and yTop
-  //         if (i > 0 && component.yTop === group.data[i - 1].yTop) {
-  //           component.left -= group.data[i - 1].right;
-  //           component.yTop = group.yTop;
-  //         }
-
-  //         // Update totalWidth
-  //         totalWidth += component.width;
-  //       }
-  //     }
-
-  //     return groups;
-  //   }
-
-  //   // Group components by yTop and maintain greatest height
-  //   let groupedComponents =
-  //     groupComponentsByYTopWithMaxHeight(componentsWithSeq);
-
-  //   console.log("components array before sending", groupedComponents);
-
-  //   // Send POST request to the server
-  //   fetch("http://localhost:2050/saveTemplate", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify({ groupedComponents }),
-  //   })
-  //     .then((response) => {
-  //       if (response.ok) {
-  //         // Handle success
-  //         console.log("File uploaded successfully");
-  //       } else {
-  //         // Handle error
-  //         console.error("Failed to upload file");
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error occurred while uploading file:", error);
-  //     });
-  // };
 
   PrintPdf = (flexBasis) => {
     console.log("inside print pdf");
@@ -467,18 +421,6 @@ class Grid extends Component {
           >
             Print PDF using data
           </button>
-
-          <button
-            className="pdf-button"
-            onClick={() => {
-              this.pageBreak();
-            }}
-          >
-            handle page break
-          </button>
-          <button className="pdf-button" onClick={this.toggleCompactType}>
-            Toggle Compact Type
-          </button>
         </div>
 
         <ResponsiveGridLayout
@@ -494,6 +436,7 @@ class Grid extends Component {
           allowOverlap={false}
           onDrop={this.onDrop}
           onDragOver={(e) => e.preventDefault()}
+          compactType="horizontal"
           // compactType={this.state.compactType}
         >
           {dynamicComponents && dynamicComponents.length > 0 ? (
