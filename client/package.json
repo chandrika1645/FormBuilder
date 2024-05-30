@@ -22,11 +22,12 @@
     "react-grid-layout": "^1.4.4",
     "react-resizable": "^3.0.5",
     "react-scripts": "5.0.1",
+    "tinymce": "^7.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start", 
-    "dev" : " npm run start && nodemon Server.js" ,
+    "start": "react-scripts start",
+    "dev": " npm run start && nodemon Server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

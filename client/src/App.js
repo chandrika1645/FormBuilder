@@ -8,15 +8,31 @@ import Testtable from "./Components/Testtable";
 import "./Styles/Grid.css";
 import PageBreak from "./Components/PageBreak.js";
 import EmptySpace from "./Components/EmptySpace.js";
+import CustomComponent from "./Components/CustomComponent.js";
+import TinyMCEEditor from "./Components/TinyMCEEditor.js";
 // import PageBreakTry from './Components/PageBreakTry.js';
 // import DynamicTable from './Components/DynamicTable';
 
 function App() {
   const [rightContentFlexBasis, setRightContentFlexBasis] = useState("25%");
+  const [customComponents, setCustomComponents] = useState([]);
+  const [htmlContent, setHtmlContent] = useState("");
 
   const handleOrientationChange = (flexBasis) => {
     console.log("called the function");
     setRightContentFlexBasis(flexBasis);
+  };
+  const addCustomComponent = (html) => {
+    const newComponent = {
+      id: `custom-${customComponents.length + 1}`,
+      html,
+    };
+    setCustomComponents([...customComponents, newComponent]);
+  };
+
+  const handleHtmlSubmit = (content) => {
+    setHtmlContent(content);
+    addCustomComponent(content);
   };
 
   return (
@@ -41,6 +57,8 @@ function App() {
             Landscape
           </button>
         </div>
+        <CustomComponent addCustomComponent={addCustomComponent} />
+        <TinyMCEEditor onSubmit={handleHtmlSubmit} />
         <JobDetails />
 
         <ApplianceTable />
@@ -56,7 +74,10 @@ function App() {
         className="Right-content"
         style={{ flexBasis: rightContentFlexBasis }}
       >
-        <Grid rightContentFlexBasis={rightContentFlexBasis} />
+        <Grid
+          customComponents={customComponents}
+          rightContentFlexBasis={rightContentFlexBasis}
+        />
       </div>
     </div>
   );

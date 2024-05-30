@@ -13,7 +13,7 @@ const EmptySpace = () => {
       w: 2,
       h: 2,
       minH: 2,
-      minW: 2,
+      minW: 1,
     };
 
     e.dataTransfer.setData("text/plain", JSON.stringify(Data));

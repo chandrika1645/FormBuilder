@@ -1,0 +1,24 @@
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  button {
+    width: 100%;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    background-color: #8d8e8f;
+  color: #fff;
+  margin-bottom: 5px;
+  }
+
+
+  button:hover {
+    opacity: 0.8;
+  }

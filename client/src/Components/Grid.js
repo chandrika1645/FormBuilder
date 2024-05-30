@@ -6,9 +6,6 @@ import "../Styles/Grid.css";
 import CardBlueprint from "../BluePrint/CardBlueprint";
 import TableBlueprint from "../BluePrint/TableBlueprint";
 import PageBreakBlueprint from "../BluePrint/PageBreakBlueprint";
-// import "./gridUtil";
-
-// started the state changing compact type
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -29,11 +26,11 @@ class Grid extends Component {
       ], //define our grid items and pass them as prop
       dynamicComponents: [], // New state for dynamically added components
       componentData: {},
+      removedComponentIds: [],
       styleSheets: [],
       compactType: "horizontal",
     };
     this.removeDynamicComponent = this.removeDynamicComponent.bind(this);
-    this.toggleCompactType = this.toggleCompactType.bind(this);
   }
 
   onDrop = (layout, layoutItem, event) => {
@@ -41,7 +38,7 @@ class Grid extends Component {
     event.preventDefault();
 
     const droppedData = event.dataTransfer.getData("text/plain");
-
+    console.log(droppedData);
     if (droppedData) {
       const Data = JSON.parse(droppedData);
 
@@ -84,9 +81,64 @@ class Grid extends Component {
     }
   };
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.customComponents !== this.props.customComponents) {
+      this.addCustomComponentsToGrid();
+    }
+  }
+
+  addCustomComponentsToGrid() {
+    const { customComponents } = this.props;
+    const { removedComponentIds } = this.state;
+
+    const existingComponentIds = new Set(
+      this.state.dynamicComponents.map((comp) => comp.i)
+    );
+
+    // const existingComponentIds = new Set(
+    //   this.state.dynamicComponents.map((comp) => comp.i)
+    // );
+    const newComponents = customComponents
+      .filter(
+        (component) =>
+          !existingComponentIds.has(component.id) &&
+          !removedComponentIds.includes(component.id)
+      )
+      .map((component, index) => ({
+        i: component.id,
+        x: 0,
+        y: this.state.layout.length + index * 2,
+        w: 12,
+        h: 2,
+        type: "custom",
+        html: component.html,
+      }));
+    this.setState((prevState) => ({
+      layout: [...prevState.layout, ...newComponents],
+      dynamicComponents: [...prevState.dynamicComponents, ...newComponents],
+      removedComponentIds: prevState.removedComponentIds.filter(
+        (id) => !newComponents.some((comp) => comp.i === id)
+      ),
+    }));
+  }
+
   renderDynamicComponent = (dynamicComponent) => {
     const { componentData } = this.state;
     let fields;
+    const SafeHTMLRenderer = ({ html }) => {
+      console.log("safe html was used");
+      //reference to hold the HTML content
+      const htmlRef = React.useRef();
+
+      // set the inner HTML, mounts
+      React.useEffect(() => {
+        if (htmlRef.current) {
+          htmlRef.current.innerHTML = html;
+        }
+      }, [html]);
+
+      return <div ref={htmlRef} style={{ width: "100%" }} />;
+    };
 
     switch (dynamicComponent.type) {
       case "card":
@@ -125,6 +177,23 @@ class Grid extends Component {
             id={dynamicComponent.i}
             fields={fields}
           />
+        );
+
+      // case "custom":
+      //   console.log("Rendering custom component:", dynamicComponent.html);
+      //   return (
+      //     <div
+      //       className="custom-component"
+      //       dangerouslySetInnerHTML={{ __html: dynamicComponent.html }}
+      //     />
+      //   );
+
+      case "custom":
+        console.log("Rendering custom component:", dynamicComponent.html);
+        return (
+          <div className="custom-component" style={{ width: "100%" }}>
+            <SafeHTMLRenderer html={dynamicComponent.html} />
+          </div>
         );
 
       default:
@@ -200,7 +269,7 @@ class Grid extends Component {
     }
   }
 
-  generateHTML = (layout) => {
+  generateHTML = () => {
     const dynamicComponents = document.querySelectorAll(".dynamic-component");
     console.log("inside the function");
 
@@ -208,19 +277,20 @@ class Grid extends Component {
 
     // Iterate over each dynamic component
     dynamicComponents.forEach((component) => {
-      const key = component.id.replace("dynamic-component-", "");
-      const layoutInfo = layout.find((item) => item.i === key);
-
       const rect = component.getBoundingClientRect();
       let type;
       let name;
+      let innerHTML;
 
       const layoutleft = document
         .querySelector(".layout")
         .getBoundingClientRect().left;
+
+      console.log(layoutleft);
       const card = component.querySelector(".Card-component");
       const table = component.querySelector(".table");
-      // console.log(table)
+      const customComponent = component.querySelector(".custom-component");
+
       if (card) {
         type = "card";
         name = card.attributes[2].value;
@@ -229,6 +299,9 @@ class Grid extends Component {
         type = "table";
         name = table.attributes[2].value;
         console.log("logging name", name);
+      } else if (customComponent) {
+        type = "custom-component";
+        innerHTML = customComponent.innerHTML;
       }
 
       componentsWithSeq.push({
@@ -240,8 +313,7 @@ class Grid extends Component {
         yBottom: rect.bottom - 80,
         width: rect.width - 20,
         right: rect.right - layoutleft,
-        gridW: layoutInfo ? layoutInfo.w : 0,
-        gridH: layoutInfo ? layoutInfo.h : 0,
+        innerHTML: innerHTML,
       });
     });
 
@@ -371,19 +443,41 @@ class Grid extends Component {
       });
   };
 
+  // removeDynamicComponent = (componentId) => {
+  //   console.log("inside remove fun");
+  //   this.setState((prevState) => ({
+  //     layout: prevState.layout.filter((item) => item.i !== componentId),
+  //     dynamicComponents: prevState.dynamicComponents.filter(
+  //       (item) => item.i !== componentId
+  //     ),
+  //     componentData: Object.fromEntries(
+  //       Object.entries(prevState.componentData).filter(
+  //         ([key]) => key !== componentId
+  //       )
+  //     ),
+  //   }));
+  // };
+
   removeDynamicComponent = (componentId) => {
-    console.log("inside remove fun");
-    this.setState((prevState) => ({
-      layout: prevState.layout.filter((item) => item.i !== componentId),
-      dynamicComponents: prevState.dynamicComponents.filter(
+    this.setState((prevState) => {
+      const updatedLayout = prevState.layout.filter(
         (item) => item.i !== componentId
-      ),
-      componentData: Object.fromEntries(
-        Object.entries(prevState.componentData).filter(
-          ([key]) => key !== componentId
-        )
-      ),
-    }));
+      );
+      const updatedDynamicComponents = prevState.dynamicComponents.filter(
+        (item) => item.i !== componentId
+      );
+
+      return {
+        layout: updatedLayout,
+        dynamicComponents: updatedDynamicComponents,
+        removedComponentIds: [...prevState.removedComponentIds, componentId],
+        componentData: Object.fromEntries(
+          Object.entries(prevState.componentData).filter(
+            ([key]) => key !== componentId
+          )
+        ),
+      };
+    });
   };
 
   toggleCompactType() {
@@ -398,7 +492,7 @@ class Grid extends Component {
   }
 
   render() {
-    const { layout, dynamicComponents, compactType } = this.state;
+    const { layout, dynamicComponents } = this.state;
     console.log("Layout data:", layout);
     console.log("Dynamic components:", dynamicComponents);
     return (

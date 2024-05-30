@@ -12,6 +12,7 @@
   /* border: 1px solid #ddd; */
   padding-left: 10px;
   position: relative;
+  margin-right: 10px;
   
 }
 .layout{
@@ -71,6 +72,20 @@
 .remove-button:hover {
   background-color: #aaa;
 }
+
+.table th, .table td {
+  border: 1px solid #ddd; 
+  padding: 8px;
+  text-align: left;
+  break-inside: avoid;
+}
+
+.table th {
+  background-color: #ADD8E6;
+  break-inside: avoid;
+}
+
+
 
 
 

@@ -110,10 +110,6 @@ const a = 12;
 
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/ping", (req, res) => {
-  res.send("server running");
-});
-
 app.get("/", (req, res) => {
   res.send("Hello again"); // Or render your HTML file here
 });
@@ -273,6 +269,8 @@ app.post("/saveTemplate", (req, res) => {
         //logic using flex
 
         group.data.forEach((component, index) => {
+          let componentHTML = "";
+
           if (component.componentType === "table") {
             const name = component.componentName;
             console.log(name);
@@ -356,13 +354,29 @@ app.post("/saveTemplate", (req, res) => {
                 console.log("Card name not found in JSON");
               }
             }
+
             // Replace placeholder in existing content with generated card HTML
 
             existingContent = existingContent.replace(
               "<!-- Generated form content goes here -->",
               cardHTML + "<!-- Generated form content goes here -->"
             );
+          } else if (component.componentType === "custom-component") {
+            // For custom components, use the innerHTML property
+            componentHTML = `<div
+              class="custom-component"
+              style="
+                width: ${component.width}px;
+                height: ${component.height}px;
+              "
+            >${component.innerHTML}</div>`;
           }
+
+          // Replace placeholder in existing content with generated component HTML
+          existingContent = existingContent.replace(
+            "<!-- Generated form content goes here -->",
+            componentHTML + "<!-- Generated form content goes here -->"
+          );
 
           isLastComponent = index === group.data.length - 1;
         });
