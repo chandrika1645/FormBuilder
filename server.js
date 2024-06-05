@@ -181,92 +181,6 @@ app.post("/saveTemplate", (req, res) => {
         // grid-gap: 10px;
 
         let isLastComponent = false;
-        // Iterate over components within each group
-
-        // group.data.forEach((component, index) => {
-        //   if (component.componentType === "table") {
-        //     const name = component.componentName;
-        //     console.log(name);
-        //     // Generate HTML for the table
-        //     const data = JSONdata[name];
-
-        //     if (data) {
-        //       // Generate HTML for the table
-        //       let tableHTML = `<table
-        //                     style="
-
-        //                     margin-left: ${component.left}px;
-        //                     grid-column: span ${component.gridW};
-        //                     grid-row: span ${component.gridH};
-        //                     "
-        //                     class="table">`;
-
-        //       // Generate table header
-        //       tableHTML += "<thead><tr>";
-        //       data[0].thead.forEach((header) => {
-        //         tableHTML += `<th>${header}</th>`;
-        //       });
-        //       tableHTML += "</tr></thead>";
-
-        //       // Generate table body
-        //       tableHTML += "<tbody>";
-        //       data[0].tbody.forEach((row) => {
-        //         tableHTML += "<tr>";
-        //         Object.values(row).forEach((value) => {
-        //           tableHTML += `<td>${value}</td>`;
-        //         });
-        //         tableHTML += "</tr>";
-        //       });
-        //       tableHTML += "</tbody></table>";
-
-        //       // Replace placeholder in existing content with generated table HTML
-        //       existingContent = existingContent.replace(
-        //         "<!-- Generated form content goes here -->",
-        //         tableHTML + "<!-- Generated form content goes here -->"
-        //       );
-        //     } else {
-        //       console.log("tableName not found in JSON");
-        //     }
-        //   } else if (component.componentType === "card") {
-        //     const name = component.componentName;
-
-        //     const cardData = JSONdata[name];
-
-        //     if (cardData) {
-        //       // Generate HTML for the card component
-        //       let cardHTML = `<div class="Card-component"
-        //                     style="
-        //                     margin-left: ${component.left}px;
-        //                     grid-column: span ${component.gridW};
-        //                     grid-row: span ${component.gridH};
-        //                      "
-        //                     >`;
-
-        //       // Iterate through card fields and generate HTML
-        //       cardData[0].fields.forEach((field) => {
-        //         if (field.isTitle) {
-        //           cardHTML += `<p style="font-weight: bold;">${field.value}</p>`;
-        //         } else {
-        //           cardHTML += `<p>${field.label}: ${field.value}</p>`;
-        //         }
-        //       });
-
-        //       cardHTML += `</div>`;
-
-        //       // Replace placeholder in existing content with generated card HTML
-        //       existingContent = existingContent.replace(
-        //         "<!-- Generated form content goes here -->",
-        //         cardHTML + "<!-- Generated form content goes here -->"
-        //       );
-        //     } else {
-        //       console.log("Card name not found in JSON");
-        //     }
-        //   }
-
-        //   isLastComponent = index === group.data.length - 1;
-        // });
-
-        //logic using flex
 
         group.data.forEach((component, index) => {
           let componentHTML = "";
@@ -361,7 +275,10 @@ app.post("/saveTemplate", (req, res) => {
               "<!-- Generated form content goes here -->",
               cardHTML + "<!-- Generated form content goes here -->"
             );
-          } else if (component.componentType === "custom-component") {
+          } else if (
+            component.componentType === "custom-component" ||
+            component.componentType === "image"
+          ) {
             // For custom components, use the innerHTML property
             componentHTML = `<div
               class="custom-component"

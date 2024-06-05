@@ -1,0 +1,15 @@
+/* src/ImageRenderer.css */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+  }
+  
+  .image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 4px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+  

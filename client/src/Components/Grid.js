@@ -154,9 +154,23 @@ class Grid extends Component {
         );
 
       case "image":
-        return (
-          <img src={componentData[dynamicComponent.i].imageUrl} alt="logo" />
+        const imageUrlField = componentData[dynamicComponent.i].fields.find(
+          (field) => field.label === "Image URL"
         );
+        if (imageUrlField) {
+          const imageUrl = imageUrlField.value;
+          return (
+            <div className="image-component">
+              <img
+                src={imageUrl}
+                alt="image"
+                style={{ width: "80px", height: "80px", objectFit: "cover" }}
+              />
+            </div>
+          );
+        } else {
+          return <p>Image URL not found</p>;
+        }
 
       case "table":
         fields = componentData[dynamicComponent.i].fields;
@@ -178,15 +192,6 @@ class Grid extends Component {
             fields={fields}
           />
         );
-
-      // case "custom":
-      //   console.log("Rendering custom component:", dynamicComponent.html);
-      //   return (
-      //     <div
-      //       className="custom-component"
-      //       dangerouslySetInnerHTML={{ __html: dynamicComponent.html }}
-      //     />
-      //   );
 
       case "custom":
         console.log("Rendering custom component:", dynamicComponent.html);
@@ -290,6 +295,7 @@ class Grid extends Component {
       const card = component.querySelector(".Card-component");
       const table = component.querySelector(".table");
       const customComponent = component.querySelector(".custom-component");
+      const image = component.querySelector(".image-component");
 
       if (card) {
         type = "card";
@@ -302,6 +308,9 @@ class Grid extends Component {
       } else if (customComponent) {
         type = "custom-component";
         innerHTML = customComponent.innerHTML;
+      } else if (image) {
+        type = "image";
+        innerHTML = image.innerHTML;
       }
 
       componentsWithSeq.push({

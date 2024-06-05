@@ -10,8 +10,7 @@ import PageBreak from "./Components/PageBreak.js";
 import EmptySpace from "./Components/EmptySpace.js";
 import CustomComponent from "./Components/CustomComponent.js";
 import TinyMCEEditor from "./Components/TinyMCEEditor.js";
-// import PageBreakTry from './Components/PageBreakTry.js';
-// import DynamicTable from './Components/DynamicTable';
+import ImageRenderer from "./BluePrint/ImageRenderer.js";
 
 function App() {
   const [rightContentFlexBasis, setRightContentFlexBasis] = useState("25%");
@@ -58,10 +57,11 @@ function App() {
           </button>
         </div>
         <CustomComponent addCustomComponent={addCustomComponent} />
-        <TinyMCEEditor onSubmit={handleHtmlSubmit} />
+        {/* <TinyMCEEditor onSubmit={handleHtmlSubmit} /> */}
         <JobDetails />
 
         <ApplianceTable />
+        <ImageRenderer />
         <EmptySpace />
         <PageBreak />
         <ServiceAdd />
