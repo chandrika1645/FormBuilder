@@ -1,0 +1,35 @@
+.radio-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+  }
+  
+  .radio-buttons-container > .radio-button-blueprint {
+    flex: 1 1 auto; /* Allow flex items to grow and shrink */
+    box-sizing: border-box;
+    
+  }
+  
+  @media (max-width: 1200px) {
+    .radio-buttons-container {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .radio-buttons-container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .radio-buttons-container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .radio-buttons-container {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+  }

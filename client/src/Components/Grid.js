@@ -4,8 +4,12 @@ import React, { Component } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import "../Styles/Grid.css";
 import CardBlueprint from "../BluePrint/CardBlueprint";
-import TableBlueprint from "../BluePrint/TableBlueprint";
+// import TableBlueprint from "../BluePrint/TableBlueprint";
 import PageBreakBlueprint from "../BluePrint/PageBreakBlueprint";
+import RadioButtonBlueprint from "../BluePrint/RadioButtonBlueprint";
+import CheckBoxBlueprint from "../BluePrint/CheckBoxBlueprint";
+import DropDowns from "./DropDowns";
+import DropDownBlueprint from "../BluePrint/DropDownBlueprint";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -18,8 +22,8 @@ class Grid extends Component {
           i: "fixed-block-component",
           x: 0,
           y: 3,
-          w: 13,
-          h: 2,
+          w: 130,
+          h: 20,
           static: true,
           preventCollision: true,
         },
@@ -33,6 +37,9 @@ class Grid extends Component {
     this.removeDynamicComponent = this.removeDynamicComponent.bind(this);
   }
 
+  //changing now check from here
+  // i will be changing
+
   onDrop = (layout, layoutItem, event) => {
     console.log("onDrop called");
     event.preventDefault();
@@ -42,7 +49,7 @@ class Grid extends Component {
     if (droppedData) {
       const Data = JSON.parse(droppedData);
 
-      const { minH, minW, w, h, fields, type, componentName } = Data;
+      const { minH, minW, w, h, fields, type, componentID } = Data;
       const { x, y } = layoutItem;
 
       // const newComponentId = `dynamic-${nextComponentId++}`;
@@ -61,7 +68,7 @@ class Grid extends Component {
         minW,
         fields,
         type,
-        componentName,
+        componentID,
       };
 
       const updatedComponentData = {
@@ -176,10 +183,45 @@ class Grid extends Component {
         fields = componentData[dynamicComponent.i].fields;
         console.log(componentData[dynamicComponent.i].componentName);
         return (
-          <TableBlueprint
-            TableName={componentData[dynamicComponent.i].componentName}
+          <></>
+
+          // <TableBlueprint
+          //   TableName={componentData[dynamicComponent.i].componentName}
+          //   id={dynamicComponent.i}
+          //   fields={fields}
+          // />
+        );
+
+      case "RADIO":
+        fields = componentData[dynamicComponent.i].fields;
+        console.log(componentData[dynamicComponent.i].componentID);
+        return (
+          <RadioButtonBlueprint
+            CardName={componentData[dynamicComponent.i].componentID}
             id={dynamicComponent.i}
-            fields={fields}
+            data={fields}
+          />
+        );
+
+      case "CHECKBOX":
+        fields = componentData[dynamicComponent.i].fields;
+        console.log(componentData[dynamicComponent.i].componentID);
+        return (
+          <CheckBoxBlueprint
+            CardName={componentData[dynamicComponent.i].componentID}
+            id={dynamicComponent.i}
+            data={fields}
+          />
+        );
+
+      case "DROPDOWN":
+        fields = componentData[dynamicComponent.i].fields;
+        console.log(componentData[dynamicComponent.i].componentID);
+        return (
+          <DropDownBlueprint
+            CardName={componentData[dynamicComponent.i].componentID}
+            id={dynamicComponent.i}
+            data={fields}
           />
         );
 
@@ -296,6 +338,9 @@ class Grid extends Component {
       const table = component.querySelector(".table");
       const customComponent = component.querySelector(".custom-component");
       const image = component.querySelector(".image-component");
+      const radio = component.querySelector(".radio-button-blueprint");
+      const checkBox = component.querySelector(".checkbox-blueprint");
+      const dropDown = component.querySelector(".dropdown-blueprint");
 
       if (card) {
         type = "card";
@@ -311,6 +356,15 @@ class Grid extends Component {
       } else if (image) {
         type = "image";
         innerHTML = image.innerHTML;
+      } else if (radio) {
+        type = "radio";
+        innerHTML = radio.outerHTML;
+      } else if (checkBox) {
+        type = "checkBox";
+        innerHTML = checkBox.outerHTML;
+      } else if (dropDown) {
+        type = "dropDown";
+        innerHTML = dropDown.outerHTML;
       }
 
       componentsWithSeq.push({
@@ -530,8 +584,8 @@ class Grid extends Component {
           className="layout"
           layouts={{ lg: this.state.layout }}
           breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          rowHeight={30}
+          cols={{ lg: 120, md: 100, sm: 60, xs: 40, xxs: 20 }}
+          rowHeight={2}
           onResizeStop={this.handleResize}
           onDragStop={this.handleDrag}
           isResizable={true}

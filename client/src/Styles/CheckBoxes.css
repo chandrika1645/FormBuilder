@@ -1,0 +1,11 @@
+.checkBoxes-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px; /* Adjust the gap between items as needed */
+  }
+  
+  .checkBoxes-buttons-container > .checkBoxes-button-blueprint {
+    flex: 1 1 auto; /* Allow flex items to grow and shrink */
+    min-width: 200px; /* Minimum width for each radio button blueprint */
+    max-width: 300px; /* Maximum width for each radio button blueprint */
+  }

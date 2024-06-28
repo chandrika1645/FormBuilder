@@ -9,14 +9,9 @@
   color: black; 
   overflow: hidden;
   user-select: none;
-  /* border: 1px solid #ddd; */
-  padding-left: 10px;
   position: relative;
-  margin-right: 10px;
-  
 }
 .layout{
-  /* background-color: rgb(138, 136, 136); */
   height: 100%;
   min-height: 100%;
 }
@@ -69,7 +64,39 @@
     right: 5px;
 }
 
-.remove-button:hover {
+table{
+  display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: black;
+}
+
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+colgroup {
+  display: table-column-group;
+}
+
+
+/* .remove-button:hover {
   background-color: #aaa;
 }
 
@@ -83,7 +110,7 @@
 .table th {
   background-color: #ADD8E6;
   break-inside: avoid;
-}
+} */
 
 
 

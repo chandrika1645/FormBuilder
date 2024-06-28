@@ -16,8 +16,8 @@ const ImageRenderer = () => {
       type: "image",
       componentName: "imageRenderer",
       fields: [{ label: "Image URL", value: src }],
-      w: 1,
-      h: 4,
+      w: 9,
+      h: 8,
       minH: 4,
       minW: 1,
     };

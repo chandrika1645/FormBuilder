@@ -1,0 +1,2525 @@
+{
+    "id": 1846,
+    "name": "Test form name me GT",
+    "displayName": "Test form name me GT offline",
+    "isAnalysed": false,
+    "isActive": true,
+    "isDeleted": false,
+    "templateId": "XlmEK1KQhd",
+    "companyId": 3,
+    "createdUserId": 2809,
+    "updatedUserId": 3,
+    "createdBy": {
+        "id": 2809,
+        "firstName": "admintest",
+        "lastName": "1",
+        "username": "admin@s.io",
+        "email": "admin@s.io",
+        "roleId": 7,
+        "companyId": 3,
+        "timeZoneId": 1,
+        "isActive": true,
+        "isDeleted": false,
+        "updatedBy": "api_rw@10.0.1.173",
+        "updatedAt": "2023-01-12T10:25:42.000Z",
+        "createdAt": "2023-01-12T10:25:42.000Z",
+        "profilePhoto": 2809,
+        "firstname": "admintest",
+        "lastname": "1"
+    },
+    "updatedBy": {
+        "id": 3,
+        "firstName": "Chaitanya",
+        "lastName": "Patel",
+        "username": "chaitanya@smartserv.io",
+        "email": "chaitanya@smartserv.io",
+        "isAdmin": false,
+        "roleId": 7,
+        "companyId": 3,
+        "timeZoneId": 1,
+        "isActive": true,
+        "isDeleted": false,
+        "updatedBy": "api_rw@10.0.1.173",
+        "updatedAt": "2023-10-18T09:55:53.000Z",
+        "createdAt": "2020-10-27T13:52:06.000Z",
+        "profilePhoto": "qDPMzDZzeO",
+        "landline": "(797) 907-9797",
+        "cellphone": "(123) 456-7890",
+        "ext": "6",
+        "rateCriterion": "COST",
+        "rateBasis": "HOURLY",
+        "firstname": "Chaitanya",
+        "lastname": "Patel"
+    },
+    "createdAt": "2024-04-17T05:04:11.000Z",
+    "updatedAt": "2024-05-14T08:17:18.000Z",
+    "sections": [
+        {
+            "id": 71136,
+            "name": "Section 1",
+            "displayName": "Section 1",
+            "showDisplayName": true,
+            "showSummary": false,
+            "options": {},
+            "moduleId": "33",
+            "moduleEntityId": 1846,
+            "templateId": "TcPHPmBBTf",
+            "companyId": 3,
+            "sortPosition": "00",
+            "isActive": true,
+            "isDeleted": false,
+            "createdUserId": 2809,
+            "updatedUserId": 3,
+            "createdBy": "api_rw@10.0.1.173",
+            "updatedBy": "api_rw@10.0.1.173",
+            "createdAt": "2024-04-17T05:04:11.000Z",
+            "updatedAt": "2024-05-14T08:17:18.000Z",
+            "fields": [
+                {
+                    "id": 256403,
+                    "name": "Input date time",
+                    "displayName": "Input date time",
+                    "value": "2024-04-16T19:30:00.000Z",
+                    "uiType": "INPUT",
+                    "dataType": "DATE_TIME",
+                    "defaultValue": "January 1, 2024 1:00 AM",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "label": "Billing Address - country",
+                        "value": {
+                            "entity": "country",
+                            "entityType": "BILLING_ADDRESS"
+                        },
+                        "dateFormat": "MMMM d, yyyy h:mm a",
+                        "showTimeInput": true
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "00",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "MPC8pBWHk3",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256404,
+                    "name": "Input date time (COPY)",
+                    "displayName": "Input date time (COPY)",
+                    "value": "2024-04-16T19:30:00.000Z",
+                    "uiType": "INPUT",
+                    "dataType": "DATE_TIME",
+                    "defaultValue": "January 1, 2024 1:00 AM",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "label": "Billing Address - country",
+                        "value": {
+                            "entity": "country",
+                            "entityType": "BILLING_ADDRESS"
+                        },
+                        "dateFormat": "MMMM d, yyyy h:mm a",
+                        "showTimeInput": true
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "01",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "krOaOmAyT0",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256405,
+                    "name": "Input NUMBER",
+                    "displayName": "Input NUMBER",
+                    "value": "0",
+                    "uiType": "INPUT",
+                    "dataType": "TEXT",
+                    "defaultValue": "0",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71136,
+                    "sortPosition": "02",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "LI43CGrJZm",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256406,
+                    "name": "Input DATE",
+                    "displayName": "Input DATE",
+                    "value": "2024-04-17T18:30:00.000Z",
+                    "uiType": "INPUT",
+                    "dataType": "DATE",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71136,
+                    "sortPosition": "03",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "Jyd8Fi43Df",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256407,
+                    "name": "Textarea TEXT",
+                    "displayName": "Textarea TEXT",
+                    "value": "",
+                    "uiType": "TEXTAREA",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71136,
+                    "sortPosition": "04",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "7kmchJxCwH",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256408,
+                    "name": "Dropdown TEXT",
+                    "displayName": "Dropdown TEXT",
+                    "value": "Option 1",
+                    "uiType": "DROPDOWN",
+                    "dataType": "TEXT",
+                    "defaultValue": "Option 1",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dropdownOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            },
+                            {
+                                "key": "",
+                                "label": "2.5",
+                                "value": "2.5"
+                            },
+                            {
+                                "key": "",
+                                "label": "3.5lb",
+                                "value": "3.5lb"
+                            },
+                            {
+                                "key": "",
+                                "label": "4.5lb",
+                                "value": "4.5lb"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "05",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "827DQtaRTO",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256409,
+                    "name": "Radio TEXT",
+                    "displayName": "Radio TEXT",
+                    "value": "Option 1",
+                    "uiType": "RADIO",
+                    "dataType": "TEXT",
+                    "defaultValue": "Option 1",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ],
+                        "horizontalAlignedOptions": false
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "06",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "uHBLX3UNyY",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256410,
+                    "name": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nWhy do we use it?",
+                    "displayName": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nWhy do we use it?",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "07",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "0FyYBRAcYz",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50220,
+                            "name": "custom_0FyYBRAcYz",
+                            "displayName": "custom_0FyYBRAcYz",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_0FyYBRAcYz",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50221,
+                            "name": "custom_0FyYBRAcYz",
+                            "displayName": "custom_0FyYBRAcYz",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_0FyYBRAcYz",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256411,
+                    "name": "Table ARRAY",
+                    "displayName": "Table ARRAY",
+                    "value": [
+                        {
+                            "__id__": "cjNWxH0kj1",
+                            "Column 1": "2024-04-01T21:28:00.070Z",
+                            "Column 2": "Option 2",
+                            "Column 4": "TEst value",
+                            "New Column": "dfdf"
+                        },
+                        {
+                            "__id__": "st4jzsmTAP",
+                            "Column 1": "2024-04-17T05:03:00.193Z",
+                            "Column 2": "Option 2",
+                            "Column 4": "TEst value"
+                        }
+                    ],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "defaultValue": "[{\"__id__\":\"cjNWxH0kj1\",\"Column 1\":\"2024-04-01T21:28:00.070Z\",\"Column 2\":\"Option 2\",\"Column 4\":\"TEst value\",\"New Column\":\"dfdf\"}]",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column 1",
+                                "uiType": "INPUT",
+                                "dataType": "TIME",
+                                "displayName": "Column 1",
+                                "defaultValue": "10:00",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column 2",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column 2",
+                                "defaultValue": "Option 2",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        },
+                                        {
+                                            "key": "Option 3",
+                                            "label": "Option 3",
+                                            "value": "Option 3"
+                                        },
+                                        {
+                                            "key": "2.5",
+                                            "label": "2.5",
+                                            "value": "2.5"
+                                        },
+                                        {
+                                            "key": "3.5lb",
+                                            "label": "3.5lb",
+                                            "value": "3.5lb"
+                                        },
+                                        {
+                                            "key": "4.5lb",
+                                            "label": "4.5lb",
+                                            "value": "4.5lb"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "Column 3",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column 3",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column 4",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column 4",
+                                "defaultValue": "TEst value",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "New Column",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "New Column",
+                                "columnOptions": {}
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "08",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "8e9HlFgEqp",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256412,
+                    "name": "Checkbox MAP",
+                    "displayName": "Checkbox MAPP",
+                    "value": {
+                        "Option 2": true,
+                        "Option 3": true
+                    },
+                    "uiType": "CHECKBOX",
+                    "dataType": "MAP",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "checkboxOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "09",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ENjekAd5Cz",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256413,
+                    "name": "Signature Pad",
+                    "displayName": "Signature Pad",
+                    "value": "",
+                    "uiType": "SIGNATURE_PAD",
+                    "dataType": "URL",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71136,
+                    "sortPosition": "10",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "azcHSh3LTn",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256414,
+                    "name": "Chart",
+                    "displayName": "Chart",
+                    "value": {},
+                    "uiType": "CHART",
+                    "dataType": "MAP",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "chartType": "LINE"
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "11",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "bjkbkjknkj",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256415,
+                    "name": "Label Test\n                           display Name 2 right\n                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    "displayName": "Label Test\n                    display Name 2 right\n            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                    "value": "",
+                    "uiType": "LABEL",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "bold": false,
+                        "size": "medium",
+                        "italic": true,
+                        "alignment": "center",
+                        "textColor": "#171716",
+                        "underline": true,
+                        "backgroundColor": "#dedede"
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "12",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "biunuiwn",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256416,
+                    "name": "Attachment ARRAY",
+                    "displayName": "Attachment ARRAY",
+                    "value": [],
+                    "uiType": "ATTACHMENT",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "noDrop": true
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "13",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ErSU9OyT1u",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256417,
+                    "name": "New Table",
+                    "displayName": "New Table",
+                    "value": [
+                        {
+                            "__id__": "kJrDZ0FCs0",
+                            "Column2 Date": "2024-04-16T18:30:00.000Z",
+                            "Column3 Time": "2024-04-17T05:04:00.630Z"
+                        }
+                    ],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column1 Text",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column1 Text",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column2 Date",
+                                "uiType": "INPUT",
+                                "dataType": "DATE",
+                                "displayName": "Column2 Date",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column3 Time",
+                                "uiType": "INPUT",
+                                "dataType": "TIME",
+                                "displayName": "Column3 Time",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column4 Attachment",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column4 Attachment",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column5 Options",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column5 Options",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "Column6 Date-Time",
+                                "uiType": "INPUT",
+                                "dataType": "DATE_TIME",
+                                "displayName": "Column6 Date-Time"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "14",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ErSU9OyT1v",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256418,
+                    "name": "Date Time",
+                    "displayName": "Date Time",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "DATE_TIME",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dateFormat": "MMMM d, yyyy h:mm a",
+                        "showTimeInput": true
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "15",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ErSU9OyT1z",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256419,
+                    "name": "New Table Test",
+                    "displayName": "New Table Test",
+                    "value": [
+                        {
+                            "__id__": "Jf2wr1zWR4",
+                            "text 1": "text 1",
+                            "num 1": "4.33",
+                            "date 1": "2024-04-17T18:30:00.000Z",
+                            "time 1": "2024-04-09T13:31:00.706Z",
+                            "date time": "2024-04-18T16:31:00.000Z"
+                        }
+                    ],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "defaultValue": "[{\"__id__\":\"Jf2wr1zWR4\",\"text 1\":\"text 1\",\"num 1\":\"4.33\",\"date 1\":\"2024-04-17T18:30:00.000Z\",\"time 1\":\"2024-04-09T13:31:00.706Z\",\"date time\":\"2024-04-18T16:31:00.000Z\"}]",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "text 1",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "text 1",
+                                "defaultValue": "text 1",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "num 1",
+                                "uiType": "INPUT",
+                                "dataType": "NUMBER",
+                                "displayName": "num 1",
+                                "defaultValue": "4.33",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "date 1",
+                                "uiType": "INPUT",
+                                "dataType": "DATE",
+                                "displayName": "date 1",
+                                "defaultValue": "2024-04-17T18:30:00.000Z",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "time 1",
+                                "uiType": "INPUT",
+                                "dataType": "TIME",
+                                "displayName": "time 1",
+                                "defaultValue": "2024-04-09T13:31:00.706Z",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "date time",
+                                "uiType": "INPUT",
+                                "dataType": "DATE_TIME",
+                                "displayName": "date time",
+                                "defaultValue": "2024-04-18T16:31:00.000Z",
+                                "columnOptions": {
+                                    "dateFormat": "MMMM d, yyyy h:mm a"
+                                }
+                            },
+                            {
+                                "name": "dropdown 1",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "dropdown 1",
+                                "defaultValue": "2.5 ;2'3;",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "2.5 ;2'3;",
+                                            "label": "2.5 ;2'3;",
+                                            "value": "2.5 ;2'3;"
+                                        },
+                                        {
+                                            "key": "2.34#$#$",
+                                            "label": "2.34#$#$",
+                                            "value": "2.34#$#$"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "16",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "UOi7rAzGWu",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256420,
+                    "name": "New",
+                    "displayName": "New",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "17",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "aJfVQ5X149",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50222,
+                            "name": "custom_aJfVQ5X149",
+                            "displayName": "custom_aJfVQ5X149",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_aJfVQ5X149",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50223,
+                            "name": "custom_aJfVQ5X149",
+                            "displayName": "custom_aJfVQ5X149",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_aJfVQ5X149",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256421,
+                    "name": "Deficiency ",
+                    "displayName": "Deficiency ",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71136,
+                    "sortPosition": "18",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "SdqEvQNAKU",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50224,
+                            "name": "custom_SdqEvQNAKU",
+                            "displayName": "custom_SdqEvQNAKU",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_SdqEvQNAKU",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50225,
+                            "name": "custom_SdqEvQNAKU",
+                            "displayName": "custom_SdqEvQNAKU",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_SdqEvQNAKU",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 71137,
+            "name": "Section 2",
+            "displayName": "Section 2",
+            "showDisplayName": true,
+            "showSummary": false,
+            "options": {},
+            "moduleId": "33",
+            "moduleEntityId": 1846,
+            "templateId": "JUi7hZXh8h",
+            "companyId": 3,
+            "sortPosition": "01",
+            "isActive": true,
+            "isDeleted": false,
+            "createdUserId": 2809,
+            "updatedUserId": 3,
+            "createdBy": "api_rw@10.0.1.173",
+            "updatedBy": "api_rw@10.0.1.173",
+            "createdAt": "2024-04-17T05:04:11.000Z",
+            "updatedAt": "2024-05-14T08:17:18.000Z",
+            "fields": [
+                {
+                    "id": 256422,
+                    "name": "Input TEXT",
+                    "displayName": "Input TEXT",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71137,
+                    "sortPosition": "00",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "EQmHSDmvkd",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256423,
+                    "name": "Input NUMBER",
+                    "displayName": "Input NUMBER",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "NUMBER",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71137,
+                    "sortPosition": "01",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "EdAIjvmEKS",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256424,
+                    "name": "Input DATE",
+                    "displayName": "Input DATE",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "DATE",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71137,
+                    "sortPosition": "02",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "LiAOyAChD4",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256425,
+                    "name": "Textarea TEXT",
+                    "displayName": "Textarea TEXT",
+                    "value": "",
+                    "uiType": "TEXTAREA",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71137,
+                    "sortPosition": "03",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "3ShRqX7C4G",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256426,
+                    "name": "Dropdown TEXT",
+                    "displayName": "Dropdown TEXT",
+                    "value": "Option 2",
+                    "uiType": "DROPDOWN",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dropdownOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "04",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "iIIO5Egh7G",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256427,
+                    "name": "Radio TEXT",
+                    "displayName": "Radio TEXT",
+                    "value": "Option 3",
+                    "uiType": "RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ],
+                        "horizontalAlignedOptions": false
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "05",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "FYBwEwB9FY",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256428,
+                    "name": "Deficiency",
+                    "displayName": "Deficiency",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "06",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ID9RfNTZsH",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50226,
+                            "name": "custom_ID9RfNTZsH",
+                            "displayName": "custom_ID9RfNTZsH",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_ID9RfNTZsH",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50227,
+                            "name": "custom_ID9RfNTZsH",
+                            "displayName": "custom_ID9RfNTZsH",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_ID9RfNTZsH",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256429,
+                    "name": "Table ARRAY",
+                    "displayName": "Table ARRAY",
+                    "value": [],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column 1",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column 1",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column 2",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column 2",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        },
+                                        {
+                                            "key": "Option 3",
+                                            "label": "Option 3",
+                                            "value": "Option 3"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "Column 3",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column 3",
+                                "columnOptions": {}
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "07",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ALhQT2X7jl",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256430,
+                    "name": "Checkbox MAP",
+                    "displayName": "Checkbox MAP",
+                    "value": {},
+                    "uiType": "CHECKBOX",
+                    "dataType": "MAP",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "checkboxOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "08",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "2u1e33pTf9",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256431,
+                    "name": "Deficiency (COPY)",
+                    "displayName": "Deficiency (COPY)",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "09",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "Nksg29dDJA",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50228,
+                            "name": "custom_Nksg29dDJA",
+                            "displayName": "custom_Nksg29dDJA",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_Nksg29dDJA",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50229,
+                            "name": "custom_Nksg29dDJA",
+                            "displayName": "custom_Nksg29dDJA",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_Nksg29dDJA",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256432,
+                    "name": "Signature Pad",
+                    "displayName": "Signature Pad",
+                    "value": "",
+                    "uiType": "SIGNATURE_PAD",
+                    "dataType": "URL",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71137,
+                    "sortPosition": "10",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "EHnInXxcnP",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256433,
+                    "name": "Attachment ARRAY",
+                    "displayName": "Attachment ARRAY",
+                    "value": [],
+                    "uiType": "ATTACHMENT",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "noDrop": true
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "11",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "noi6qFXrz1",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256434,
+                    "name": "New Table",
+                    "displayName": "New Table",
+                    "value": [],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column1 Text",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column1 Text",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column2 Date",
+                                "uiType": "INPUT",
+                                "dataType": "DATE",
+                                "displayName": "Column2 Date",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column3 Time",
+                                "uiType": "INPUT",
+                                "dataType": "TIME",
+                                "displayName": "Column3 Time",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column4 Attachment",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column4 Attachment",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column5 Options",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column5 Options",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "sectionId": 71137,
+                    "sortPosition": "12",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "noi6qFXrz2",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                }
+            ]
+        },
+        {
+            "id": 71138,
+            "name": "Section 3",
+            "displayName": "Section 3",
+            "showDisplayName": true,
+            "showSummary": false,
+            "options": {},
+            "moduleId": "33",
+            "moduleEntityId": 1846,
+            "templateId": "YjyS1JxB8o",
+            "companyId": 3,
+            "sortPosition": "02",
+            "isActive": true,
+            "isDeleted": false,
+            "createdUserId": 2809,
+            "updatedUserId": 3,
+            "createdBy": "api_rw@10.0.1.173",
+            "updatedBy": "api_rw@10.0.1.173",
+            "createdAt": "2024-04-17T05:04:11.000Z",
+            "updatedAt": "2024-05-14T08:17:18.000Z",
+            "fields": [
+                {
+                    "id": 256435,
+                    "name": "Input TEXT",
+                    "displayName": "Input TEXT",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71138,
+                    "sortPosition": "00",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "9pmIuPdVgB",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256436,
+                    "name": "Input NUMBER",
+                    "displayName": "Input NUMBER",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "NUMBER",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71138,
+                    "sortPosition": "01",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "IeCCzq1IWZ",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256437,
+                    "name": "Input DATE",
+                    "displayName": "Input DATE",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "DATE",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71138,
+                    "sortPosition": "02",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "SEHk08qOrz",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256438,
+                    "name": "Textarea TEXT",
+                    "displayName": "Textarea TEXT",
+                    "value": "",
+                    "uiType": "TEXTAREA",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71138,
+                    "sortPosition": "03",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "IHeAtmlRsr",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256439,
+                    "name": "Dropdown TEXT",
+                    "displayName": "Dropdown TEXT",
+                    "value": "",
+                    "uiType": "DROPDOWN",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dropdownOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ]
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "04",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "VdUZ9MJ5UT",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256440,
+                    "name": "Radio TEXT",
+                    "displayName": "Radio TEXT",
+                    "value": "",
+                    "uiType": "RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ],
+                        "horizontalAlignedOptions": false
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "05",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "IcNrDfoHdi",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256441,
+                    "name": "Deficiency",
+                    "displayName": "Deficiency",
+                    "value": "",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "06",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "geMNrmPxXE",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50230,
+                            "name": "custom_geMNrmPxXE",
+                            "displayName": "custom_geMNrmPxXE",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_geMNrmPxXE",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50231,
+                            "name": "custom_geMNrmPxXE",
+                            "displayName": "custom_geMNrmPxXE",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_geMNrmPxXE",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256442,
+                    "name": "Table ARRAY",
+                    "displayName": "Table ARRAY",
+                    "value": [],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column 1",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column 1",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column 2",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column 2",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        },
+                                        {
+                                            "key": "Option 3",
+                                            "label": "Option 3",
+                                            "value": "Option 3"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "Column 3",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column 3",
+                                "columnOptions": {}
+                            }
+                        ]
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "07",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "TH4K2EwCSS",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256443,
+                    "name": "Checkbox MAP",
+                    "displayName": "Checkbox MAP",
+                    "value": {},
+                    "uiType": "CHECKBOX",
+                    "dataType": "MAP",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "checkboxOptions": [
+                            {
+                                "key": "Option 1",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "Option 2",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            },
+                            {
+                                "key": "Option 3",
+                                "label": "Option 3",
+                                "value": "Option 3"
+                            }
+                        ]
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "08",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "uXExCxgBng",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256444,
+                    "name": "Signature Pad",
+                    "displayName": "Signature Pad",
+                    "value": "",
+                    "uiType": "SIGNATURE_PAD",
+                    "dataType": "URL",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71138,
+                    "sortPosition": "09",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "sNB9XDPln4",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256445,
+                    "name": "Attachment ARRAY",
+                    "displayName": "Attachment ARRAY",
+                    "value": [],
+                    "uiType": "ATTACHMENT",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "noDrop": true
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "10",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "zywqTSKq7F",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256446,
+                    "name": "New Table",
+                    "displayName": "New Table",
+                    "value": [],
+                    "uiType": "TABLE",
+                    "dataType": "ARRAY",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "columns": [
+                            {
+                                "name": "Column1 Text",
+                                "uiType": "INPUT",
+                                "dataType": "TEXT",
+                                "displayName": "Column1 Text",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column2 Date",
+                                "uiType": "INPUT",
+                                "dataType": "DATE",
+                                "displayName": "Column2 Date",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column3 Time",
+                                "uiType": "INPUT",
+                                "dataType": "TIME",
+                                "displayName": "Column3 Time",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column4 Attachment",
+                                "uiType": "ATTACHMENT",
+                                "dataType": "ARRAY",
+                                "displayName": "Column4 Attachment",
+                                "columnOptions": {}
+                            },
+                            {
+                                "name": "Column5 Options",
+                                "uiType": "DROPDOWN",
+                                "dataType": "TEXT",
+                                "displayName": "Column5 Options",
+                                "columnOptions": {
+                                    "dropdownOptions": [
+                                        {
+                                            "key": "Option 1",
+                                            "label": "Option 1",
+                                            "value": "Option 1"
+                                        },
+                                        {
+                                            "key": "Option 2",
+                                            "label": "Option 2",
+                                            "value": "Option 2"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "sectionId": 71138,
+                    "sortPosition": "11",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "zywqTSKq7E",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                }
+            ]
+        },
+        {
+            "id": 71139,
+            "name": "New Section 4",
+            "displayName": "New Section 4",
+            "showDisplayName": true,
+            "showSummary": false,
+            "options": {},
+            "moduleId": "33",
+            "moduleEntityId": 1846,
+            "templateId": "6pQciAtAtV",
+            "companyId": 3,
+            "sortPosition": "03",
+            "isActive": true,
+            "isDeleted": false,
+            "createdUserId": 2809,
+            "updatedUserId": 3,
+            "createdBy": "api_rw@10.0.1.173",
+            "updatedBy": "api_rw@10.0.1.173",
+            "createdAt": "2024-04-17T05:04:11.000Z",
+            "updatedAt": "2024-05-14T08:17:18.000Z",
+            "fields": [
+                {
+                    "id": 256447,
+                    "name": "Input Text",
+                    "displayName": "Input Text",
+                    "value": "test 123",
+                    "uiType": "INPUT",
+                    "dataType": "TEXT",
+                    "defaultValue": "test 123",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71139,
+                    "sortPosition": "00",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "PPPIW6l526",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256448,
+                    "name": "Input Number",
+                    "displayName": "Input Number",
+                    "value": 23232,
+                    "uiType": "INPUT",
+                    "dataType": "NUMBER",
+                    "defaultValue": "23232",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71139,
+                    "sortPosition": "01",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "lR8xl1YHIg",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256449,
+                    "name": "Input Date",
+                    "displayName": "Input Date",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "DATE",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71139,
+                    "sortPosition": "02",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "RJmIabsJnR",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256450,
+                    "name": "Input Time",
+                    "displayName": "Input Time",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "TIME",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dateFormat": "h:mm aa",
+                        "showTimeInput": true,
+                        "showTimeSelectOnly": true
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "03",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "WukVZqFCkK",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256451,
+                    "name": "Input Year",
+                    "displayName": "Input Year",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "YEAR",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dateFormat": "yyyy",
+                        "showYearPicker": true
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "04",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "ojkUWn8lyA",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256452,
+                    "name": "Input DateTime",
+                    "displayName": "Input DateTime",
+                    "value": "",
+                    "uiType": "INPUT",
+                    "dataType": "DATE_TIME",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dateFormat": "MMMM d, yyyy h:mm a",
+                        "showTimeInput": true
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "05",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "GIEQRg1tso",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256453,
+                    "name": "TextArea",
+                    "displayName": "TextArea",
+                    "value": "TextArea",
+                    "uiType": "TEXTAREA",
+                    "dataType": "TEXT",
+                    "defaultValue": "TextArea",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {},
+                    "sectionId": 71139,
+                    "sortPosition": "06",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "dbuz403GLJ",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256454,
+                    "name": "DropDown",
+                    "displayName": "DropDown",
+                    "value": "Option 1",
+                    "uiType": "DROPDOWN",
+                    "dataType": "TEXT",
+                    "defaultValue": "Option 1",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "dropdownOptions": [
+                            {
+                                "key": "",
+                                "label": "Option 1",
+                                "value": "Option 1"
+                            },
+                            {
+                                "key": "",
+                                "label": "Option 2",
+                                "value": "Option 2"
+                            }
+                        ]
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "07",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "kw3lTgRtBI",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256455,
+                    "name": "Radio",
+                    "displayName": "Radio",
+                    "value": "Radio 2",
+                    "uiType": "RADIO",
+                    "dataType": "TEXT",
+                    "defaultValue": "Radio 2",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "",
+                                "label": "Radio 1",
+                                "value": "Radio 1"
+                            },
+                            {
+                                "key": "",
+                                "label": "Radio 2",
+                                "value": "Radio 2"
+                            }
+                        ],
+                        "horizontalAlignedOptions": false
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "08",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "GnrMB2HFrW",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256456,
+                    "name": "Checkbox",
+                    "displayName": "Checkbox",
+                    "value": {},
+                    "uiType": "CHECKBOX",
+                    "dataType": "MAP",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "checkboxOptions": [
+                            {
+                                "key": "1",
+                                "label": "Check1",
+                                "value": "1"
+                            },
+                            {
+                                "key": "2",
+                                "label": "Check2",
+                                "value": "2"
+                            }
+                        ]
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "09",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "3seU2b8HQP",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": []
+                },
+                {
+                    "id": 256457,
+                    "name": "Deficiency",
+                    "displayName": "Deficiency",
+                    "value": "NA",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "defaultValue": "NA",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "10",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "J1NFuIS7sM",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50232,
+                            "name": "custom_J1NFuIS7sM",
+                            "displayName": "custom_J1NFuIS7sM",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_J1NFuIS7sM",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50233,
+                            "name": "custom_J1NFuIS7sM",
+                            "displayName": "custom_J1NFuIS7sM",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_J1NFuIS7sM",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                },
+                {
+                    "id": 256458,
+                    "name": "Deficiency (COPY)",
+                    "displayName": "Deficiency (COPY)",
+                    "value": "NA",
+                    "uiType": "BUTTON_RADIO",
+                    "dataType": "TEXT",
+                    "defaultValue": "NA",
+                    "mandatory": false,
+                    "readonly": false,
+                    "options": {
+                        "radioOptions": [
+                            {
+                                "key": "YES",
+                                "label": "Yes",
+                                "value": "YES"
+                            },
+                            {
+                                "key": "NO",
+                                "label": "No",
+                                "value": "NO"
+                            },
+                            {
+                                "key": "NA",
+                                "label": "N/A",
+                                "value": "NA"
+                            }
+                        ]
+                    },
+                    "sectionId": 71139,
+                    "sortPosition": "11",
+                    "isActive": true,
+                    "isDeleted": false,
+                    "templateId": "L1u2mTPbRc",
+                    "createdUserId": 2809,
+                    "updatedUserId": 3,
+                    "createdBy": "api_rw@10.0.1.173",
+                    "updatedBy": "api_rw@10.0.1.173",
+                    "createdAt": "2024-04-17T05:04:11.000Z",
+                    "updatedAt": "2024-05-14T08:17:18.000Z",
+                    "reasons": [
+                        {
+                            "id": 50234,
+                            "name": "custom_L1u2mTPbRc",
+                            "displayName": "custom_L1u2mTPbRc",
+                            "isSelected": false,
+                            "reasonTemplateId": "custom_L1u2mTPbRc",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        },
+                        {
+                            "id": 50235,
+                            "name": "custom_L1u2mTPbRc",
+                            "displayName": "custom_L1u2mTPbRc",
+                            "isSelected": true,
+                            "reasonTemplateId": "custom_L1u2mTPbRc",
+                            "isActive": true,
+                            "isDeleted": false,
+                            "createdUserId": 2809,
+                            "updatedUserId": 3,
+                            "createdBy": "api_rw@10.0.1.173",
+                            "updatedBy": "api_rw@10.0.1.173",
+                            "createdAt": "2024-04-17T05:04:11.000Z",
+                            "updatedAt": "2024-05-14T08:17:18.000Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

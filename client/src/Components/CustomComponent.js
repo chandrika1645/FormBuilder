@@ -5,8 +5,12 @@ import "../Styles/CustomComponent.css";
 
 ReactModal.setAppElement("#root");
 
+//making changes
+
 const CustomComponent = ({ addCustomComponent }) => {
   const [showModal, setShowModal] = useState(false);
+  const [htmlContent, setHtmlContent] = useState("");
+  const [textContent, setTextContent] = useState("");
   const editorRef = useRef(null);
 
   const handleOpenModal = () => {
@@ -23,6 +27,11 @@ const CustomComponent = ({ addCustomComponent }) => {
     }
   };
 
+  const handleEditorChange = (newValue, editor) => {
+    setHtmlContent(newValue);
+    setTextContent(editor.getContent({ format: "text" }));
+  };
+
   const handleCloseModal = () => {
     console.log("Closing modal");
     setShowModal(false);
@@ -30,7 +39,10 @@ const CustomComponent = ({ addCustomComponent }) => {
 
   return (
     <div>
-      <button onClick={handleOpenModal}>Add Custom Component</button>
+      <div className="add-custom-component-button" onClick={handleOpenModal}>
+        <span className="plus-icon">+</span>
+        <span>Add Custom Component</span>
+      </div>
       <ReactModal
         isOpen={showModal}
         onRequestClose={handleCloseModal}
@@ -54,6 +66,7 @@ const CustomComponent = ({ addCustomComponent }) => {
             <Editor
               apiKey="me5pu1t51rcxdducpg74at9ism4zi2txm4gekezz5m1xlaiy"
               onInit={(_evt, editor) => (editorRef.current = editor)}
+              onEditorChange={handleEditorChange}
               init={{
                 plugins:
                   "anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown",

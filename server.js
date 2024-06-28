@@ -162,11 +162,11 @@ app.post("/saveTemplate", (req, res) => {
       // Assuming each group contains an array of components
       if (Array.isArray(group.data)) {
         console.log(group);
-        let groupDiv = `<div style="
+        let groupDiv = `<div  class= "parent-container" style="
         width: 1100px !important;
         display: flex;
         flex-wrap: wrap;
-
+        gap: 10px;
         
 
          ">`;
@@ -277,7 +277,10 @@ app.post("/saveTemplate", (req, res) => {
             );
           } else if (
             component.componentType === "custom-component" ||
-            component.componentType === "image"
+            component.componentType === "image" ||
+            component.componentType === "radio" ||
+            component.componentType === "checkBox" ||
+            component.componentType === "dropDown"
           ) {
             // For custom components, use the innerHTML property
             componentHTML = `<div
