@@ -1,61 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TinyMCE Editor</title>
-    <script
-      src="https://cdn.tiny.cloud/1/your-tinymce-apikey/tinymce/7/tinymce.min.js"
-      referrerpolicy="origin"
-    ></script>
-    <script>
-      // Initialize TinyMCE editor
-      tinymce.init({
-        selector: "#mytextarea",
-        plugins:
-          "advtemplate preview powerpaste casechange searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed codesample advtable table charmap pagebreak nonbreaking anchor advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter permanentpen pageembed linkchecker emoticons export",
-        selector: "textarea",
-        plugins:
-          "anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage advtemplate ai mentions tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss markdown",
-        toolbar:
-          "undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat",
-        tinycomments_mode: "embedded",
-        tinycomments_author: "Author name",
-        mergetags_list: [
-          { value: "First.Name", title: "First Name" },
-          { value: "Email", title: "Email" },
-        ],
-        ai_request: (request, respondWith) =>
-          respondWith.string(() =>
-            Promise.reject("See docs to implement AI Assistant")
-          ),
-      });
 
-      // Function to log editor content
-      function logEditorContent() {
-        var editorContent = tinymce.activeEditor.getContent();
-        console.log(editorContent);
-      }
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Form</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <script src="../replaceText.js"></script>
     <style>
-      body {
-        margin: 4rem auto;
-        padding: 0 2rem;
-        background-color: #f9f9fb;
-      }
-      main {
-        width: 100%;
-      }
     </style>
-  </head>
-  <body>
-    <main>
-      <textarea id="mytextarea">
-        <h1 style="text-align: center;">Getting and Setting Content</h1>
-        <p style="text-align: center;">Use the only WYSIWYG editor that’s trusted by <a href="https://www.tiny.cloud" target="_blank" rel="noopener">1.5M developers</a>.</p>
-    </textarea
-      >
-      <button onclick="logEditorContent()">Log Editor Content</button>
-    </main>
-  </body>
-</html>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Form</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <script>                function replaceTextInHtml(textReplace) { let htmlContent = document.documentElement.innerHTML; let modifiedHtml = htmlContent; textReplace.forEach(replacement => { const [search, replace] = Object.entries(replacement)[0]; modifiedHtml = modifiedHtml.replace(new RegExp(search, 'g'), replace); }); return modifiedHtml; }            </script>
+    <style>
+        table {
+            width: 100%;
+            page-break-inside: auto !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.4;
+            overflow-wrap: break-word;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-collapse: collapse;
+            box-sizing: border-box;
+            table-layout: fixed;
+        }
+
+        tr {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.4;
+            overflow-wrap: break-word;
+            border-collapse: collapse;
+            box-sizing: border-box;
+        }
+
+        td, th {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.4;
+            overflow-wrap: break-word;
+            border-collapse: collapse;
+            padding: 0.4rem;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(204, 204, 204);
+            box-sizing: border-box;
+        }
+
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            background-color: #f2f2f2;
+            text-align: left;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        tr {
+            page-break-inside: avoid !important;
+            page-break-after: auto !important;
+        }
+
+        thead {
+            display: table-header-group !important;
+        }
+
+        tfoot {
+            display: table-footer-group !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form-content" style="width: 1100px;">
+        <div class="parent-container" style="width: 1098px !important; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div class="custom-component" style="width: 426px; height: 186px;">
+                <div id="2xJ7E9aZyJ" draggable="true" class="radio-button-blueprint"
+                    style="box-sizing: border-box; border: 1px solid rgb(221, 221, 221); border-radius: 5px; padding: 10px; background-color: rgb(249, 249, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; width: 100%;">
+                    <div class="radio-button-title"
+                        style="font-size: 1.2em; margin-bottom: 10px; font-weight: bold; color: rgb(51, 51, 51);">See
+                        attached separate report for </div>
+                    <div class="radio-button-group" style="display: flex; flex-direction: column;">
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-2xJ7E9aZyJ" readonly="" tabindex="0" type="radio"
+                                    value="Fire Alarm"><label>{{ReportFor_See attached separate report for_Fire
+                                    Alarm}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-2xJ7E9aZyJ" readonly="" tabindex="0" type="radio"
+                                    value="Dry"><label>{{ReportFor_See attached separate report for_Dry}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-2xJ7E9aZyJ" readonly="" tabindex="0" type="radio"
+                                    value="Deluge"><label>{{ReportFor_See attached separate report for_Deluge}}</label>
+                            </div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-2xJ7E9aZyJ" readonly="" tabindex="0" type="radio"
+                                    value="Pre-action"><label>{{ReportFor_See attached separate report
+                                    for_Pre-action}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-2xJ7E9aZyJ" readonly="" tabindex="0" type="radio"
+                                    value="Other"><label>{{ReportFor_See attached separate report for_Other}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-component" style="width: 193px; height: 114px;">
+                <div style="width: 100%;">
+                    <p><img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+                            alt="images" width="223" height="125"></p>
+                </div>
+            </div>
+        </div>
+        <div class="parent-container" style="width: 1098px !important; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div class="custom-component" style="width: 1044px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>{{Water Supplies_TableLabel_Riser # Or Location}}</th>
+                            <th>{{Water Supplies_TableLabel_Size Discharge}}</th>
+                            <th>{{Water Supplies_TableLabel_Static Prior (City)}}</th>
+                            <th>{{Water Supplies_TableLabel_Static(System)_1}}</th>
+                            <th>{{Water Supplies_TableLabel_Flow Pressure}}</th>
+                            <th>{{Water Supplies_TableLabel_Static After (City)}}</th>
+                            <th>{{Water Supplies_TableLabel_Static(System)_2}}</th>
+                            <th>{{Water Supplies_TableLabel_Alarm Delay and Comments}}</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="parent-container" style="width: 1070px !important; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div class="custom-component" style="width: 1070px;">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Description}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Manufacturer}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Model #}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Size}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Style}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Accessible}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Signs}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Secured}}</th>
+                            <th>{{Dry / Pre- Action Systems_TableLabel_Condition}}</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="parent-container" style="width: 1098px !important; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div class="custom-component" style="width: 618px; height: 150px;">
+                <div id="rivJlvdVpL" draggable="true" class="radio-button-blueprint"
+                    style="box-sizing: border-box; border: 1px solid rgb(221, 221, 221); border-radius: 5px; padding: 10px; background-color: rgb(249, 249, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; width: 100%;">
+                    <div class="radio-button-title"
+                        style="font-size: 1.2em; margin-bottom: 10px; font-weight: bold; color: rgb(51, 51, 51);">
+                        Inspection Frequency </div>
+                    <div class="radio-button-group" style="display: flex; flex-direction: column;">
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-rivJlvdVpL" readonly="" tabindex="0" type="radio"
+                                    value="Annual"><label>{{LocationDetails_Inspection Frequency_Annual}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-rivJlvdVpL" readonly="" tabindex="0" type="radio"
+                                    value="Semi-Annual"><label>{{LocationDetails_Inspection
+                                    Frequency_Semi-Annual}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-rivJlvdVpL" readonly="" tabindex="0" type="radio"
+                                    value="Quarterly"><label>{{LocationDetails_Inspection Frequency_Quarterly}}</label>
+                            </div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-rivJlvdVpL" readonly="" tabindex="0" type="radio"
+                                    value="Weekly"><label>{{LocationDetails_Inspection Frequency_Weekly}}</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-component" style="width: 596px; height: 138px;">
+                <div id="NgRozDT3fh" draggable="true" class="radio-button-blueprint"
+                    style="box-sizing: border-box; border: 1px solid rgb(221, 221, 221); border-radius: 5px; padding: 10px; background-color: rgb(249, 249, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; width: 100%;">
+                    <div class="radio-button-title"
+                        style="font-size: 1.2em; margin-bottom: 10px; font-weight: bold; color: rgb(51, 51, 51);">Water
+                        supply source </div>
+                    <div class="radio-button-group" style="display: flex; flex-direction: column;">
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-NgRozDT3fh" readonly="" tabindex="0" type="radio"
+                                    value="City"><label>{{Water Supplies_Water supply source_City}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-NgRozDT3fh" readonly="" tabindex="0" type="radio"
+                                    value="Pump"><label>{{Water Supplies_Water supply source_Pump}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-NgRozDT3fh" readonly="" tabindex="0" type="radio"
+                                    value="Tank"><label>{{Water Supplies_Water supply source_Tank}}</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parent-container" style="width: 1098px !important; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div class="custom-component" style="width: 1023px; height: 162px;">
+                <div id="hVJIWI8N9O" draggable="true" class="radio-button-blueprint"
+                    style="box-sizing: border-box; border: 1px solid rgb(221, 221, 221); border-radius: 5px; padding: 10px; background-color: rgb(249, 249, 249); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; width: 100%;">
+                    <div class="radio-button-title"
+                        style="font-size: 1.2em; margin-bottom: 10px; font-weight: bold; color: rgb(51, 51, 51);">Water
+                        supply source </div>
+                    <div class="radio-button-group" style="display: flex; flex-direction: column;">
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-hVJIWI8N9O" readonly="" tabindex="0" type="radio"
+                                    value="City"><label>{{Water Supplies_Water supply source_City}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-hVJIWI8N9O" readonly="" tabindex="0" type="radio"
+                                    value="Pump"><label>{{Water Supplies_Water supply source_Pump}}</label></div>
+                        </div>
+                        <div class="radio-button-option" style="margin-bottom: 10px;">
+                            <div class="ui radio checkbox"
+                                style="margin-right: 5px; font-size: 1em; color: rgb(85, 85, 85); word-break: break-word; white-space: normal; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                <input class="hidden" name="radioGroup-hVJIWI8N9O" readonly="" tabindex="0" type="radio"
+                                    value="Tank"><label>{{Water Supplies_Water supply source_Tank}}</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
