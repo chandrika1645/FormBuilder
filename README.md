@@ -38,7 +38,7 @@ This tool also addresses complex challenges such as **page-break issues** and **
 ### **PDF Generation**
 - Uses Puppeteer to generate high-quality PDFs from templates.
 - Ensures pixel-perfect document output.
-- Solves complex **page-break** and **table-break** issues.
+- Solves **page-break** and **table-break** issues.
 
 ### **Backend Processing**
 - The backend generates PDFs using Puppeteer and sends them in **blob format**.
@@ -46,15 +46,13 @@ This tool also addresses complex challenges such as **page-break issues** and **
 
 ### **User-Friendly Experience**
 - Responsive and easy-to-use interface.
-- Quick preview before downloading the final PDF.
 
 ---
 
 ## 🔄 **How It Works**
 
 1. **Design the Template**: Use the drag-and-drop interface to create a structured template.
-2. **Inject Data**: Upload a JSON file with relevant customer or form data.
-3. **Generate PDF**: The system replaces placeholders with JSON values and downloads the formatted PDF.
+2. **Generate PDF**: The system replaces placeholders with JSON values and downloads the formatted PDF.
 
 ---
 
@@ -73,7 +71,7 @@ This tool also addresses complex challenges such as **page-break issues** and **
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd report-builder
+   cd client
    ```
 
 3. **Install Dependencies:**
