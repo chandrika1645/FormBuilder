@@ -19,7 +19,7 @@
 
 Report Builder provides an efficient way to create, edit, and download reports in a pre-defined format. Users can design templates on the frontend using a drag-and-drop interface, inject structured data from a JSON file on the backend, and download the final document as a **PDF**.
 
-This tool also addresses complex challenges such as **page-break issues** and **table-break issues**, ensuring properly formatted and structured PDFs.
+This tool also addresses challenges such as **page-break issues** and **table-break issues**, ensuring properly formatted and structured PDFs.
 
 ---
 
