@@ -7,11 +7,11 @@
 ## 📑 **Table of Contents**
 
 - [Overview](#overview)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [How It Works](#how-it-works)
 - [Setup](#setup)
 - [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
 
 ---
 
