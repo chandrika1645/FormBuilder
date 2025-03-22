@@ -23,6 +23,18 @@ This tool also addresses challenges such as **page-break issues** and **table-br
 
 ---
 
+## 🎬 **Screenshots**
+
+**Template creation**
+
+<img src="https://raw.githubusercontent.com/chandrika1645/FormBuilder/main/assets/template-creation.png" width="500">
+
+**PDF download**
+
+<img src="https://raw.githubusercontent.com/chandrika1645/FormBuilder/main/assets/pdf-download.png" width="500">
+
+---
+
 ## 🛠️ **Features**
 
 ### **Template Creation**
@@ -91,13 +103,7 @@ This tool also addresses challenges such as **page-break issues** and **table-br
 - **React DOM Manipulation** - Saves and manages HTML template structures.
 - **Puppeteer** - Generates PDFs from the created templates.
 - **JavaScript** - Core logic and dynamic rendering.
-- **Node.js (Backend)** - Handles PDF generation and file processing.
-
----
-
-## 🎬 **Screenshots**
-
-(Screenshots will be added soon.)
+- **express.js (Backend)** - Handles PDF generation and file processing.
 
 ---
 
