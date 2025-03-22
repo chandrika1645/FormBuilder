@@ -62,7 +62,7 @@ This tool also addresses complex challenges such as **page-break issues** and **
 - Node.js
 - NPM or Yarn
 
-### **Steps to Run**
+### **Steps to Run** 
 
 1. **Clone the Repository:**
    ```bash
